@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_18-06-20",
+            "content": "@@ -304,136 +304,7 @@\n n%0A%0A \n-def main():%0A    sandalia: Slipper = Slipper(%22%22)%0A%0A    while sandalia.gettamanho() == 0:%0A        print(%22Digite seu tamanho%22)%0A        %0A\n+   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-07_18-20-47",
+            "content": "@@ -432,14 +432,8 @@\n        %0A\n-main()\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-07_18-21-04",
+            "content": "@@ -212,10 +212,9 @@\n lue \n-%3E=\n+%3C\n  20 \n@@ -227,10 +227,9 @@\n lue \n-%3C=\n+%3E\n  50:\n@@ -245,54 +245,23 @@\n     \n-return True%0A        else:%0A            print(%22T\n+print(%22falha: t\n aman\n@@ -278,16 +278,35 @@\n stente%22)\n+%0A            return\n %0A%0A def m\n@@ -324,16 +324,25 @@\n sandalia\n+: Slipper\n  = Slipp\n@@ -363,110 +363,8 @@\n ile \n-True:%0A        try:%0A%0A            resposta = int(input(%22Digite o tamanho da chinela: %22))%0A            if \n sand\n@@ -368,28 +368,27 @@\n andalia.\n-s\n+g\n et\n-_\n tamanho(\n resposta\n@@ -383,114 +383,49 @@\n nho(\n-resposta):%0A                print(f%22Congratulations, voc%C3%AA comprou uma chinela de tamanho %7Bsandalia.tamanho%7D\n+) == 0:%0A        print(%22Digite seu tamanho\n %22)%0A \n@@ -435,101 +435,8 @@\n     \n-  \n-      break%0A            else:%0A                print(%22Erro: tamanho invalido, digite outro%22)\n %0Amai\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-07_18-36-51",
+            "content": "@@ -29,16 +29,30 @@\n t__(self\n+, tamanho: int\n ):%0A     \n@@ -55,26 +55,24 @@\n        self.\n-__\n tamanho: int\n@@ -132,26 +132,24 @@\n return self.\n-__\n tamanho%0A    \n@@ -180,22 +180,25 @@\n f, value\n-: int)\n+) -%3E None\n :%0A      \n@@ -247,143 +247,76 @@\n     \n-self.__tamanho = value%0A            return%0A        else:%0A            print(%22fail: tamanho de chinela n%C3%A3o disponivel%22)%0A            return\n+return True%0A        else:%0A            print(%22Tamanho n%C3%A3o existente%22)\n %0A%0A d\n@@ -353,16 +353,17 @@\n per(%22%22)%0A\n+%0A\n     whil\n@@ -368,66 +368,89 @@\n ile \n-sandalia.get_tamanho() == 0:%0A        tamanho = int(input(%22\n+True:%0A        try:%0A%0A            resposta = int(input(%22Digite o tamanho da chinela\n : %22)\n@@ -455,24 +455,31 @@\n %22))%0A        \n+ \n+   if \n sandalia.set\n@@ -491,25 +491,31 @@\n nho(\n-tamanho)%0A\n+resposta):%0A    \n         \n prin\n@@ -514,29 +514,41 @@\n     \n+    \n print(\n-%22Parabe\n+f%22Congratulatio\n ns, voc\n-e\n+%C3%AA\n  com\n@@ -579,11 +579,9 @@\n nho \n-%22, \n+%7B\n sand\n@@ -589,21 +589,119 @@\n lia.\n-get_tamanho()\n+tamanho%7D%22)%0A                break%0A            else:%0A                print(%22Erro: tamanho invalido, digite outro%22\n )%0Ama\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-09_02-05-27",
+            "content": "@@ -367,16 +367,17 @@\n return%0A%0A\n+ \n def main\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_02-06-09",
+            "content": "@@ -367,19 +367,16 @@\n return%0A%0A\n-   \n def main\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_02-06-23",
+            "content": "@@ -366,25 +366,24 @@\n  return%0A%0A   \n- \n def main():%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_02-07-25",
+            "content": "@@ -367,16 +367,20 @@\n return%0A%0A\n+    \n def main\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_02-07-33",
+            "content": "@@ -367,17 +367,16 @@\n return%0A%0A\n- \n def main\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_02-07-38",
+            "content": "@@ -193,13 +193,23 @@\n  if \n-20 %3C=\n+value %3E= 20 and\n  val\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_14-07-07",
+            "content": "@@ -357,16 +357,17 @@\n return%0A%0A\n+ \n def main\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_14-14-49",
+            "content": "@@ -596,15 +596,14 @@\n anho())%0A\n- \n main()\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_14-15-37",
+            "content": "@@ -392,16 +392,18 @@\n Slipper(\n+%22%22\n )%0A    wh\n@@ -596,14 +596,15 @@\n anho())%0A\n+ \n main()\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_14-16-02",
+            "content": "@@ -506,16 +506,20 @@\n amanho)%0A\n+    \n     prin\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_14-21-52",
+            "content": "@@ -193,30 +193,21 @@\n  if \n-value %3E 19 and\n+20 %3C=\n  value %3C\n  51:\n@@ -206,11 +206,12 @@\n ue %3C\n+=\n  5\n-1\n+0\n :%0A  \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_14-28-01",
+            "content": "@@ -1,21 +1,21 @@\n class \n-Chinela\n+Slipper\n :%0A    de\n@@ -69,16 +69,17 @@\n  0%0A    %0A\n+%0A\n     def \n@@ -82,20 +82,23 @@\n def get_\n-size\n+tamanho\n (self) -\n@@ -134,16 +134,20 @@\n tamanho%0A\n+    \n %0A    def\n@@ -150,17 +150,18 @@\n  def set\n-T\n+_t\n amanho(s\n@@ -168,18 +168,18 @@\n elf, val\n-or\n+ue\n : int):%0A\n@@ -192,18 +192,18 @@\n   if val\n-or\n+ue\n  %3E 19 an\n@@ -207,18 +207,18 @@\n  and val\n-or\n+ue\n  %3C 51:%0A \n@@ -248,18 +248,18 @@\n ho = val\n-or\n+ue\n %0A       \n@@ -313,31 +313,41 @@\n il: \n-valor n%C3%A3o correspondido\n+tamanho de chinela n%C3%A3o disponivel\n %22)%0A \n@@ -396,15 +396,15 @@\n a = \n-Chinela\n+Slipper\n ()%0A \n@@ -425,20 +425,23 @@\n lia.get_\n-size\n+tamanho\n () == 0:\n@@ -500,9 +500,10 @@\n .set\n-T\n+_t\n aman\n@@ -514,20 +514,16 @@\n amanho)%0A\n-    \n     prin\n@@ -529,17 +529,16 @@\n nt(%22\n-Muito bem\n+Parabens\n , vo\n@@ -561,17 +561,17 @@\n hinela d\n-o\n+e\n  tamanho\n@@ -591,12 +591,15 @@\n get_\n-size\n+tamanho\n ())%0A\n@@ -604,14 +604,8 @@\n )%0Amain()\n-%0A%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-14_14-34-33",
+            "content": "@@ -1,21 +1,21 @@\n class \n-Slipper\n+Chinela\n :%0A    de\n@@ -54,17 +54,16 @@\n _tamanho\n- \n : int = \n@@ -64,16 +64,20 @@\n int = 0%0A\n+    \n %0A    def\n@@ -102,13 +102,10 @@\n  int\n- \n :%0A\n-  \n     \n@@ -130,16 +130,17 @@\n tamanho%0A\n+%0A\n     def \n@@ -141,24 +141,25 @@\n   def setTam\n+a\n nho(self, va\n@@ -170,14 +170,11 @@\n  int\n- \n ):%0A\n-  \n     \n@@ -206,17 +206,16 @@\n or %3C 51:\n- \n %0A       \n@@ -215,26 +215,24 @@\n             \n-  \n self.__taman\n@@ -241,19 +241,17 @@\n  = valor\n- %0A \n+%0A\n         \n@@ -250,25 +250,24 @@\n             \n- \n return%0A     \n@@ -273,18 +273,14 @@\n     \n-  \n else:\n- %0A \n+%0A\n     \n@@ -283,25 +283,24 @@\n             \n- \n print(%22fail:\n@@ -303,26 +303,15 @@\n ail:\n- o\n  valor \n-digitado \n n%C3%A3o \n@@ -324,30 +324,11 @@\n pond\n-e a um par de chinela \n+ido\n %22)%0A \n@@ -338,25 +338,22 @@\n         \n-  \n return\n- \n %0A%0Adef ma\n@@ -366,31 +366,29 @@\n     \n- chinelin = Slipper\n+sandalia = Chinela\n ()%0A\n- \n     \n@@ -393,24 +393,24 @@\n   while \n-chinelin\n+sandalia\n .get_siz\n@@ -419,18 +419,16 @@\n ) == 0:%0A\n-  \n         \n@@ -453,17 +453,16 @@\n t(%22: %22))\n- \n %0A       \n@@ -466,25 +466,24 @@\n     \n-  chinelin\n+sandalia\n .setTam\n+a\n nho(\n@@ -500,29 +500,33 @@\n     \n+   \n print(%22\n-parabens\n+Muito bem\n , voc\n-%C3%AA\n+e\n  com\n@@ -543,17 +543,17 @@\n hinela d\n-e\n+o\n  tamanho\n@@ -560,16 +560,16 @@\n  %22, \n-chinelin\n+sandalia\n .get\n@@ -584,12 +584,13 @@\n %0Amain()%0A\n+%0A\n     \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-14_14-35-33",
+            "content": "@@ -497,16 +497,18 @@\n (input(%22\n+: \n %22)) %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-20_19-42-43",
+            "content": "@@ -497,18 +497,16 @@\n (input(%22\n-: \n %22)) %0A   \n@@ -631,10 +631,8 @@\n ain(\n-41\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-20_19-43-02",
+            "content": "@@ -629,14 +629,16 @@\n ))%0Amain(\n+41\n )%0A    \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-20_19-43-12",
+            "content": "class Slipper:\n    def __init__(self):\n        self.__tamanho : int = 0\n\n    def get_size(self) -> int :\n          return self.__tamanho\n    def setTamnho(self, valor: int ):\n          if valor > 19 and valor < 51: \n              self.__tamanho = valor \n              return\n          else: \n              print(\"fail: o valor digitado n\u00e3o corresponde a um par de chinela \")\n              return \n\ndef main():\n     chinelin = Slipper()\n     while chinelin.get_size() == 0:\n          tamanho = int(input(\": \")) \n          chinelin.setTamnho(tamanho)\n     print(\"parabens, voc\u00ea comprou uma chinela de tamanho \", chinelin.get_size())\nmain()\n    ",
+            "lines": "22"
+        }
+    ]
+}
