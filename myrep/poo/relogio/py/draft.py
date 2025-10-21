@@ -1,8 +1,12 @@
 class Watch:
-    def __init__(self):
-        self.__hora: int = 0
-        self.__minuto: int = 0
-        self.__segundo: int = 0
+    def __init__(self, hora: int = 0, minuto: int = 0, segundo: int = 0):
+        self.__hora = 0
+        self.__minuto = 0
+        self.__segundo = 0
+
+        self.setHora(hora)
+        self.setMinuto(minuto)
+        self.setSegundo(segundo)
 
     def getHora(self):
         return self.__hora
