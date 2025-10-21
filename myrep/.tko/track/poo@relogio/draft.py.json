@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-20_21-33-42",
+            "content": "@@ -848,232 +848,8 @@\n    %0A\n-def main():%0A    reloj = Watch()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(reloj)\n+    \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-10-20_21-36-47",
+            "content": "@@ -1076,11 +1076,4 @@\n loj)\n-%0Amain()\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-10-20_21-36-58",
+            "content": "@@ -91,34 +91,34 @@\n nt = 0%0A        s\n-e\n l\n+e\n f.__segundo: int\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-20_21-37-33",
+            "content": "@@ -1077,185 +1077,8 @@\n oj)%0A\n-        if args%5B0%5D == %22set%22:%0A            h, m, s = map(int, args%5B1:%5D)%0A            reloj.setHora(h)%0A            reloj.setMinuto(m)%0A            reloj.setSegundo(s)%0A            %0A%0A%0A\n main\n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-10-20_21-42-13",
+            "content": "@@ -842,304 +842,8 @@\n 2d%7D%22\n-%0A%0A    def nextSecond(self):%0A        self.__segundo += 1%0A        if self.__segundo %3E 59:%0A            self.__segundo = 0%0A            self.__minuto += 1%0A        if self.__minuto %3E 59:%0A            self.__minuto = 0%0A            self.__hora += 1%0A        if self.__hora %3E 23:%0A            self.__hora = 0\n %0A   \n@@ -1247,61 +1247,12 @@\n     \n-if args%5B0%5D == %22next%22:%0A            reloj.nextSecond()%0A\n+    \n %0A%0A%0Am\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-20_21-48-25",
+            "content": "@@ -1596,114 +1596,8 @@\n d()%0A\n-        if args%5B0%5D == %22init%22:%0A            h, m, s = map(int, args%5B1:%5D)%0A            reloj = Watch(h, m, s)%0A\n %0A%0A%0Am\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-10-20_21-50-00",
+            "content": "@@ -1,1728 +1,55 @@\n-class Watch:%0A    def __init__(self):%0A        self.__hora: int = 0%0A        self.__minuto: int = 0%0A        self.__segundo: int = 0%0A%0A    def getHora(self):%0A        return self.__hora%0A%0A    def setHora(self, h: int):%0A        if h %3E= 0 and h %3C= 23:%0A            self.__hora = h%0A        else:%0A            print(%22fail: hora invalida%22)%0A%0A    def getMinuto(self):%0A        return self.__minuto%0A%0A    def setMinuto(self, m: int):%0A        if m %3E= 0 and m %3C= 59:%0A            self.__minuto = m%0A        else:%0A            print(%22fail: minuto invalido%22)%0A%0A    def getSegundo(self):%0A        return self.__segundo%0A%0A    def setSegundo(self, s: int):%0A        if s %3E= 0 and s %3C= 59:%0A            self.__segundo = s%0A        else:%0A            print(%22fail: segundo invalido%22)%0A%0A    def __str__(self):%0A        return f%22%7Bself.__hora:02d%7D:%7Bself.__minuto:02d%7D:%7Bself.__segundo:02d%7D%22%0A%0A    def nextSecond(self):%0A        self.__segundo += 1%0A        if self.__segundo %3E 59:%0A            self.__segundo = 0%0A            self.__minuto += 1%0A        if self.__minuto %3E 59:%0A            self.__minuto = 0%0A            self.__hora += 1%0A        if self.__hora %3E 23:%0A            self.__hora = 0%0A    %0Adef main():%0A    reloj = Watch()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A            %0A        if args%5B0%5D == %22show%22:%0A            print(reloj)%0A%0A        if args%5B0%5D == %22set%22:%0A            h, m, s = map(int, args%5B1:%5D)%0A            reloj.setHora(h)%0A            reloj.setMinuto(m)%0A            reloj.setSegundo(s)%0A%0A        if args%5B0%5D == %22next%22:%0A            reloj.nextSecond()%0A%0A        if args%5B0%5D == %22init%22:%0A            h, m, s = map(int, args%5B1:%5D)%0A            reloj = Watch(h, m, s )%0Amain()\n+@@ -1700,10 +1700,12 @@%0A m, s%0A- %0A )%0A+%250A%250A%250A%0A %250Amai%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-10-20_21-54-05",
+            "content": "@@ -127,100 +127,8 @@\n  0%0A%0A\n-        self.setHora(hora)%0A        self.setMinuto(minuto)%0A        self.setSegundo(segundo)%0A%0A\n     \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-21_13-31-59",
+            "content": "@@ -123,16 +123,107 @@\n nt = 0%0A%0A\n+        self.setHora(hora)%0A        self.setMinuto(minuto)%0A        self.setSegundo(segundo)%0A\n %0A    def\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-10-21_13-33-33",
+            "content": "@@ -31,58 +31,8 @@\n self\n-, hora: int = 0, minuto: int = 0, segundo: int = 0\n ):%0A \n@@ -41,32 +41,37 @@\n      self.__hora\n+: int\n  = 0%0A        sel\n@@ -72,32 +72,37 @@\n    self.__minuto\n+: int\n  = 0%0A        sel\n@@ -116,104 +116,18 @@\n undo\n+: int\n  = 0%0A\n-%0A        self.setHora(hora)%0A        self.setMinuto(minuto)%0A        self.setSegundo(segundo)\n %0A%0A  \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-21_13-35-45",
+            "content": "class Watch:\n    def __init__(self, hora: int = 0, minuto: int = 0, segundo: int = 0):\n        self.__hora = 0\n        self.__minuto = 0\n        self.__segundo = 0\n\n        self.setHora(hora)\n        self.setMinuto(minuto)\n        self.setSegundo(segundo)\n\n    def getHora(self):\n        return self.__hora\n\n    def setHora(self, h: int):\n        if h >= 0 and h <= 23:\n            self.__hora = h\n        else:\n            print(\"fail: hora invalida\")\n\n    def getMinuto(self):\n        return self.__minuto\n\n    def setMinuto(self, m: int):\n        if m >= 0 and m <= 59:\n            self.__minuto = m\n        else:\n            print(\"fail: minuto invalido\")\n\n    def getSegundo(self):\n        return self.__segundo\n\n    def setSegundo(self, s: int):\n        if s >= 0 and s <= 59:\n            self.__segundo = s\n        else:\n            print(\"fail: segundo invalido\")\n\n    def __str__(self):\n        return f\"{self.__hora:02d}:{self.__minuto:02d}:{self.__segundo:02d}\"\n\n    def nextSecond(self):\n        self.__segundo += 1\n        if self.__segundo > 59:\n            self.__segundo = 0\n            self.__minuto += 1\n        if self.__minuto > 59:\n            self.__minuto = 0\n            self.__hora += 1\n        if self.__hora > 23:\n            self.__hora = 0\n    \ndef main():\n    reloj = Watch()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n            \n        if args[0] == \"show\":\n            print(reloj)\n\n        if args[0] == \"set\":\n            h, m, s = map(int, args[1:])\n            reloj.setHora(h)\n            reloj.setMinuto(m)\n            reloj.setSegundo(s)\n\n        if args[0] == \"next\":\n            reloj.nextSecond()\n\n        if args[0] == \"init\":\n            h, m, s = map(int, args[1:])\n            reloj = Watch(h, m, s )\nmain()",
+            "lines": "78"
+        }
+    ]
+}
