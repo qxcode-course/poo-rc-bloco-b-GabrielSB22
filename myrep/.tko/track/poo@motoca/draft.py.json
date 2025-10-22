@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-22_18-54-56",
+            "content": "@@ -1332,15 +1332,8 @@\n elif\n- time %3E\n  sel\n@@ -1340,16 +1340,27 @@\n f.__time\n+ - time = 0\n :%0A      \n@@ -1541,179 +1541,8 @@\n rn%0A%0A\n-    def Init(self):%0A        self.__potencia = 1%0A        self.__time = 0%0A        self.__pessoa = None%0A%0A    def Honk(self):%0A        print(%22P%22 + %22e%22 * self.__potencia + %22m!%22)\n %0A%0A%0Ad\n@@ -1713,26 +1713,24 @@\n   break%0A    \n-el\n if args%5B0%5D =\n@@ -1770,391 +1770,30 @@\n     \n-elif args%5B0%5D == %22init%22:%0A        motinha.Init()%0A    elif args%5B0%5D == %22enter%22:%0A        nome = args%5B1%5D%0A        idade = int(args%5B2%5D)%0A        motinha.Inserir(nome, idade)%0A    elif args%5B0%5D == %22leave%22:%0A        motinha.leave()%0A    elif args%5B0%5D == %22buy%22:%0A        motinha.BuyTime(int(args%5B1%5D))%0A    elif args%5B0%5D == %22honk%22:%0A        motinha.Honk()%0A    else:%0A        print(%22fail: comando inv%C3%A1lido%22)\n+if args%5B0%5D == %22enter%22:\n %0Amai\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-22_19-09-04",
+            "content": "@@ -1394,18 +1394,18 @@\n d after%22\n-,\n  \n+%7B\n self.__t\n@@ -1407,17 +1407,17 @@\n f.__time\n-,\n+%7D\n  %22minute\n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-22_19-10-13",
+            "content": "@@ -1845,17 +1845,16 @@\n    %0A    \n- \n if args%5B\n@@ -1880,17 +1880,16 @@\n   break%0A\n- \n     elif\n@@ -1931,25 +1931,24 @@\n otinha)%0A    \n- \n elif args%5B0%5D\n@@ -1978,25 +1978,24 @@\n inha.Init()%0A\n- \n     elif arg\n@@ -2100,25 +2100,24 @@\n  idade)%0A    \n- \n elif args%5B0%5D\n@@ -2153,17 +2153,16 @@\n leave()%0A\n- \n     elif\n@@ -2218,25 +2218,24 @@\n gs%5B1%5D))%0A    \n- \n elif args%5B0%5D\n@@ -2269,17 +2269,16 @@\n .Honk()%0A\n- \n     else\n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-10-22_19-12-13",
+            "content": "class Pessoa:\n    def __init__(self, name: str, age: int):\n        self.__name = name\n        self.__age = age\n        \n    def getAge(self):\n        return self.__age\n\n    def getName(self):\n        return self.__name\n\n    def __str__(self):\n        return f\"{getName}:{getAge}\"\n\nclass Motoca:\n    def __init__(self, potencia: int, time:int, pessoa):\n        self.__potencia = 1\n        self.__time = 0\n        self.__pessoa = None\n\n    def __str__(self):\n        return f\"power:{self.__potencia}, time:{self.__time}, person:({self.__pessoa})\"\n\n    def Inserir(self, pessoa: Pessoa) -> bool:\n        if self.__pessoa is not None:\n            print(\"fail: busy motorcycle\")\n        self.__pessoa = Pessoa\n        return\n\n    def Remover(self):\n        if self.__pessoa is None:\n            print(\"fail: empty motorcycle\")\n            return None\n        pessoaremovida = self.__pessoa\n        self.__pessoa = None\n        return pessoaremovida\n\n    def BuyTime(self, time: int):\n         self.__time += time\n\n    def Drive(self, time: int):\n        if self.__time == 0:\n            print(\"fail: buy time first\")\n            return\n        elif self.__pessoa is None:\n            print(\"fail: empty motorcicle\")\n            return\n        elif self.__age > 10:\n            print(\"fail: too old to drive\")\n            return\n        elif time > self.__time:\n            print(\"fail: time finished after\", self.__time, \"minutes\")\n            self.__time = 0\n            return\n        else:\n            self.__time -= time\n            return\n\n    def Init(self):\n        self.__potencia = 1\n        self.__time = 0\n        self.__pessoa = None\n\n    def Honk(self):\n        print(\"P\" + \"e\" * self.__potencia + \"m!\")\n\n\ndef main():\n    motinha = Motoca()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n    \n     if args[0] == \"end\":\n        break\n     elif args[0] == \"show\":\n        print(motinha)\n     elif args[0] == \"init\":\n        motinha.Init()\n     elif args[0] == \"enter\":\n        nome = args[1]\n        idade = int(args[2])\n        motinha.Inserir(nome, idade)\n     elif args[0] == \"leave\":\n        motinha.leave()\n     elif args[0] == \"buy\":\n        motinha.BuyTime(int(args[1]))\n     elif args[0] == \"honk\":\n        motinha.Honk()\n     else:\n        print(\"fail: comando inv\u00e1lido\")\nmain()     ",
+            "lines": "94"
+        }
+    ]
+}

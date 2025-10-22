@@ -41,9 +41,54 @@ class Motoca:
     def Drive(self, time: int):
         if self.__time == 0:
             print("fail: buy time first")
+            return
         elif self.__pessoa is None:
             print("fail: empty motorcicle")
+            return
         elif self.__age > 10:
             print("fail: too old to drive")
-        elif self.__time <= 0:
-            print("fial: time finished after")    
+            return
+        elif time > self.__time:
+            print("fail: time finished after", self.__time, "minutes")
+            self.__time = 0
+            return
+        else:
+            self.__time -= time
+            return
+
+    def Init(self):
+        self.__potencia = 1
+        self.__time = 0
+        self.__pessoa = None
+
+    def Honk(self):
+        print("P" + "e" * self.__potencia + "m!")
+
+
+def main():
+    motinha = Motoca()
+
+    while True:
+        line = input()
+        print("$" + line)
+        args = line.split()
+    
+    if args[0] == "end":
+        break
+    elif args[0] == "show":
+        print(motinha)
+    elif args[0] == "init":
+        motinha.Init()
+    elif args[0] == "enter":
+        nome = args[1]
+        idade = int(args[2])
+        motinha.Inserir(nome, idade)
+    elif args[0] == "leave":
+        motinha.leave()
+    elif args[0] == "buy":
+        motinha.BuyTime(int(args[1]))
+    elif args[0] == "honk":
+        motinha.Honk()
+    else:
+        print("fail: comando inválido")
+main()     
